@@ -1,5 +1,6 @@
 $media-queries-supported: true;
 
+@import "../../bower_components/normalize-css/normalize.css";
 @import "variables";
 @import "../../bower_components/fontawesome/scss/font-awesome";
 @import "mixins";
@@ -20,6 +21,8 @@ body {
     height: 100%;
     font-family: $font--sans-serif;
     color: $color--text;
+    margin: 0;
+    padding: 0;
 }
 
 .site-nav {
