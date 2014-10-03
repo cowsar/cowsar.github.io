@@ -1,0 +1,44 @@
+$media-queries-supported: true;
+
+@import "variables";
+@import "../../bower_components/fontawesome/scss/font-awesome";
+@import "mixins";
+@import "helpers";
+@import "../../bower_components/csswizardry-grids/csswizardry-grids.scss";
+@import "buttons";
+
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,400italic|Open+Sans:300,700,400);
+
+
+h1 {
+    font-size: $font-size--huge;
+}
+
+
+body {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    height: 100%;
+    font-family: $font--sans-serif;
+    color: $color--text;
+}
+
+.site-nav {
+    display: none;
+}
+
+hr {
+    border: none;
+    height: 1px;
+//     content: "";
+//     display: block;
+    border-bottom: 1px solid $color--primary;
+    margin: $gutter--normal * 2 $gutter--normal;
+}
+
+
+@import "site-head";
+@import "donation";
+@import "skills";
+@import "education";
+@import "site-foot";

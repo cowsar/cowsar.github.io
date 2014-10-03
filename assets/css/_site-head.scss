@@ -1,0 +1,64 @@
+.site-head {
+    height: 350px;
+    position: relative;
+
+
+}
+
+    .site-head__image {
+        background-image: url(/assets/images/cover-image.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 200px;
+
+        @include media-query($medium, min, width, screen) {
+            height: 350px;
+        }
+    }
+
+    .site-logo {
+        @include text-hide();
+
+        background-image: url(/assets/images/site-logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        width: 141px;
+        height: 184px;
+        position: absolute;
+        left: 50%;
+        top: 175px;
+        transform: translateX(-50%)
+                   translateY(-40%);
+
+        @include media-query($medium, min, width, screen) {
+            transform: translate3d(-50%, -50%, 0);
+        }
+    }
+
+    .site-tagline {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        font-size: $font-size--big;
+        text-align: center;
+        color: $color--primary-light;
+        font-weight: 400;
+        transform: translateX(-50%);
+        width: 100%;
+
+        @include media-query($medium, min, width, screen) {
+            color: $color--inverse-text;
+            max-width: 80%;
+            margin: 0 auto;
+            top: 275px;
+            text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+        }
+    }

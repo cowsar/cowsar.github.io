@@ -1,0 +1,74 @@
+.skills {
+    @extend %grid;
+
+    padding: 0 $gutter--narrow;
+
+    // increase padding on larger devices
+    @include media-query($medium, min, width, screen) {
+        padding: 0 $gutter--normal;
+    }
+}
+
+    .skills__item {
+        @extend %grid__item;
+        @extend %small--one-whole;
+        @extend %medium--one-third;
+
+        text-align: center;
+        padding-top: 100px;
+        position: relative;
+    }
+
+        .skills__icon {
+            border: 2px solid $color--primary;
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+            display: block;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+
+            .skills__icon--high-angle {
+                background-image: url(/assets/images/icons/high-angle.svg);
+            }
+
+            .skills__icon--gsar {
+                background-image: url(/assets/images/icons/gsar.svg);
+            }
+
+            .skills__icon--swiftwater {
+                background-image: url(/assets/images/icons/swiftwater.svg);
+            }
+
+            .skills__icon--education {
+                background-image: url(/assets/images/icons/education.svg);
+            }
+
+        .skills__title {
+            margin-bottom: $gutter--skinny;
+            margin-top: $gutter--narrow;
+        }
+
+        .skills__item:nth-of-type(4) {
+            @extend %medium--one-whole;
+
+            text-align: right;
+            padding-top: 0;
+
+            p {
+                @extend .hidden-xs;
+
+                text-align: left;
+            }
+        }
+
+        .skills__button {
+            @extend %small--one-whole;
+        }

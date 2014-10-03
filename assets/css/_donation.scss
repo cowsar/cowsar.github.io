@@ -1,0 +1,28 @@
+.donation {
+    @extend .hidden-xs;
+    @extend %clearfix;
+
+    background-color: $color--primary-dark;
+    color: $color--inverse-text;
+    padding: $gutter--narrow $gutter--narrow;
+    margin-bottom: $gutter--normal;
+
+    @include media-query($medium, min, width, screen) {
+        padding-left: $gutter--normal;
+        padding-right: $gutter--normal;
+    }
+}
+
+    .donation__title {
+        margin-bottom: $gutter--skinny;
+        margin-top: 0;
+    }
+
+    .donation__text {
+        margin: 0;
+    }
+
+
+    .donation__button {
+        float: right;
+    }
