@@ -2405,7 +2405,7 @@ body {
 .site-head {
   height: 350px;
   position: relative; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .site-head {
       height: 500px; } }
 
@@ -2446,7 +2446,7 @@ body {
   @media screen and (min-width: 768px) {
     .site-logo {
       transform: translate3d(-50%, -50%, 0); } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .site-logo {
       top: 50%;
       transform: translate3d(-50%, -50%, 0); } }
@@ -2460,15 +2460,15 @@ body {
   color: #1D5584;
   font-weight: 400;
   transform: translateX(-50%);
-  width: 100%; }
+  width: 100%;
+  max-width: 480px; }
   @media screen and (min-width: 768px) {
     .site-tagline {
       color: white;
-      max-width: 500px;
       margin: 0 auto;
       top: 275px;
       text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); } }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .site-tagline {
       top: 350px; } }
 
@@ -2566,16 +2566,13 @@ body {
   padding: 0 10px; }
 
 .education__sub-grid {
-  padding: 0; }
+  padding-left: 0;
+  padding-right: 0; }
 
 .education__item,
 .education__sub-item {
   text-align: center;
   position: relative; }
-
-@media screen and (max-width: 768px -1) {
-  .education__sub-item:nth-of-type(1) {
-    padding-top: 100px; } }
 
 .education__sub-item {
   text-align: center; }
@@ -2585,6 +2582,10 @@ body {
   @media screen and (min-width: 768px) {
     .education__sub-item p {
       text-align: left; } }
+
+@media screen and (max-width: 767px) {
+  .education__sub-item:nth-of-type(1) {
+    padding-top: 100px; } }
 
 @media screen and (min-width: 768px) {
   .education__title {

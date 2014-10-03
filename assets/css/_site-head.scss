@@ -2,7 +2,7 @@
     height: 350px;
     position: relative;
 
-    @include media-query($medium, min, width, screen) {
+    @include media-query($large, min, width, screen) {
         height: 500px;
     }
 }
@@ -48,7 +48,7 @@
             transform: translate3d(-50%, -50%, 0);
         }
 
-        @include media-query($medium, min, width, screen) {
+        @include media-query($large, min, width, screen) {
             top: 50%;
             transform: translate3d(-50%, -50%, 0);
         }
@@ -64,16 +64,16 @@
         font-weight: 400;
         transform: translateX(-50%);
         width: 100%;
+        max-width: 480px;
 
         @include media-query($medium, min, width, screen) {
             color: $color--inverse-text;
-            max-width: 500px;
             margin: 0 auto;
             top: 275px;
             text-shadow: 0 1px 5px rgba(0,0,0,0.5);
         }
 
-        @include media-query($medium, min, width, screen) {
+        @include media-query($large, min, width, screen) {
             top: 350px;
         }
     }
