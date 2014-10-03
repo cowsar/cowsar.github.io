@@ -1,0 +1,27 @@
+.about {
+    @extend %grid;
+    @extend .hidden-xs;
+
+    background-color: $color--primary-light;
+    color: $color--inverse-text;
+    margin-bottom: $gutter--normal;
+    padding: $gutter--normal $gutter--normal;
+}
+
+    .about__title {
+        @extend %grid__item;
+        @extend %medium--one-whole;
+    }
+
+    .about__content {
+        @extend %grid__item;
+        @extend %medium--one-whole;
+
+        -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari and Chrome */
+        column-count:2;
+
+        p:nth-of-type(1) {
+            margin: 0;
+        }
+    }

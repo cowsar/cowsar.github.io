@@ -26,15 +26,16 @@ body {
     display: none;
 }
 
-hr {
-    border: none;
-    height: 1px;
-    border-bottom: 1px solid $color--primary;
-    margin: $gutter--normal * 2 $gutter--normal;
+.site-wrapper {
+    @include media-query($large, min, width, screen) {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
 }
 
 @import "site-head";
 @import "donation";
 @import "skills";
+@import "about";
 @import "education";
 @import "site-foot";

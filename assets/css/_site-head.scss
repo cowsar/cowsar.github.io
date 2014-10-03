@@ -2,7 +2,9 @@
     height: 350px;
     position: relative;
 
-
+    @include media-query($medium, min, width, screen) {
+        height: 500px;
+    }
 }
 
     .site-head__image {
@@ -19,6 +21,10 @@
 
         @include media-query($medium, min, width, screen) {
             height: 350px;
+        }
+
+        @include media-query($large, min, width, screen) {
+            height: 500px;
         }
     }
 
@@ -41,6 +47,11 @@
         @include media-query($medium, min, width, screen) {
             transform: translate3d(-50%, -50%, 0);
         }
+
+        @include media-query($medium, min, width, screen) {
+            top: 50%;
+            transform: translate3d(-50%, -50%, 0);
+        }
     }
 
     .site-tagline {
@@ -56,9 +67,13 @@
 
         @include media-query($medium, min, width, screen) {
             color: $color--inverse-text;
-            max-width: 80%;
+            max-width: 500px;
             margin: 0 auto;
             top: 275px;
             text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+        }
+
+        @include media-query($medium, min, width, screen) {
+            top: 350px;
         }
     }

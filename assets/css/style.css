@@ -1667,12 +1667,12 @@
   clear: both; }
 
 @media screen and (max-width: 767px) {
-  .hidden-xs, .donation, .skills__item:nth-of-type(4) p, .education__item:nth-of-type(1),
+  .hidden-xs, .donation, .skills__item:nth-of-type(4) p, .about, .education__item:nth-of-type(1),
   .education__item:nth-of-type(2), .twitter-feed {
     display: none !important; } }
 
 @media screen and (min-width: 768px) {
-  .visible-xs {
+  .visible-xs, .skills__icon--education {
     display: none !important; } }
 
 /*------------------------------------*\
@@ -1803,7 +1803,7 @@
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.skills, .education,
+.skills, .about, .education,
 .education__sub-grid, .site-foot {
   list-style: none;
   /* [1] */
@@ -1821,7 +1821,7 @@
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.skills__item, .education__item,
+.skills__item, .about__title, .about__content, .education__item,
 .education__sub-item, .contact-info, .site-copyright {
   display: inline-block;
   /* [1] */
@@ -1941,7 +1941,7 @@
   /**
    * Whole
    */
-  .skills__item:nth-of-type(4) {
+  .skills__item:nth-of-type(4), .about__title, .about__content {
     width: 100%; }
 
   /**
@@ -2397,15 +2397,17 @@ body {
 .site-nav {
   display: none; }
 
-hr {
-  border: none;
-  height: 1px;
-  border-bottom: 1px solid #356993;
-  margin: 40px 20px; }
+@media screen and (min-width: 1024px) {
+  .site-wrapper {
+    max-width: 1024px;
+    margin: 0 auto; } }
 
 .site-head {
   height: 350px;
   position: relative; }
+  @media screen and (min-width: 768px) {
+    .site-head {
+      height: 500px; } }
 
 .site-head__image {
   background-image: url(/assets/images/cover-image.jpg);
@@ -2421,6 +2423,9 @@ hr {
   @media screen and (min-width: 768px) {
     .site-head__image {
       height: 350px; } }
+  @media screen and (min-width: 1024px) {
+    .site-head__image {
+      height: 500px; } }
 
 .site-logo {
   font: 0/0 a;
@@ -2441,6 +2446,10 @@ hr {
   @media screen and (min-width: 768px) {
     .site-logo {
       transform: translate3d(-50%, -50%, 0); } }
+  @media screen and (min-width: 768px) {
+    .site-logo {
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0); } }
 
 .site-tagline {
   position: absolute;
@@ -2455,10 +2464,13 @@ hr {
   @media screen and (min-width: 768px) {
     .site-tagline {
       color: white;
-      max-width: 80%;
+      max-width: 500px;
       margin: 0 auto;
       top: 275px;
       text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); } }
+  @media screen and (min-width: 768px) {
+    .site-tagline {
+      top: 350px; } }
 
 .donation {
   background-color: #0F4068;
@@ -2481,10 +2493,16 @@ hr {
   float: right; }
 
 .skills {
-  padding: 0 10px; }
+  padding: 0 10px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #356993; }
   @media screen and (min-width: 768px) {
     .skills {
-      padding: 0 20px; } }
+      padding-left: 20px;
+      padding-right: 20px;
+      border-bottom: none;
+      padding-bottom: none; } }
 
 .skills__item {
   text-align: center;
@@ -2528,6 +2546,21 @@ hr {
   .skills__item:nth-of-type(4) p {
     text-align: left; }
 
+.about {
+  background-color: #1D5584;
+  color: white;
+  margin-bottom: 20px;
+  padding: 20px 20px; }
+
+.about__content {
+  -moz-column-count: 2;
+  /* Firefox */
+  -webkit-column-count: 2;
+  /* Safari and Chrome */
+  column-count: 2; }
+  .about__content p:nth-of-type(1) {
+    margin: 0; }
+
 .education,
 .education__sub-grid {
   padding: 0 10px; }
@@ -2537,10 +2570,18 @@ hr {
 
 .education__item,
 .education__sub-item {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+
+@media screen and (max-width: 768px -1) {
+  .education__sub-item:nth-of-type(1) {
+    padding-top: 100px; } }
 
 .education__sub-item {
-  text-align: right; }
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .education__sub-item {
+      text-align: right; } }
   @media screen and (min-width: 768px) {
     .education__sub-item p {
       text-align: left; } }

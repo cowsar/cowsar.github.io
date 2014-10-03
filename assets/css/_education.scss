@@ -16,6 +16,15 @@
         @extend %small--one-whole;
 
         text-align: center;
+        position: relative;
+    }
+
+    .education__sub-item:nth-of-type(1) {
+
+
+        @include media-query($medium -1, max, width, screen) {
+            padding-top: 100px;
+        }
     }
 
     .education__item:nth-of-type(1),
@@ -25,7 +34,11 @@
     }
 
     .education__sub-item {
-        text-align: right;
+        text-align: center;
+
+        @include media-query($medium, min, width, screen) {
+            text-align: right;
+        }
 
         p {
             @include media-query($medium, min, width, screen) {
