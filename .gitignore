@@ -1,2 +1,3 @@
 *.scssc
 bower_components
+*.map
