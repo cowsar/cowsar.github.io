@@ -2461,6 +2461,7 @@ body {
         font-style: italic;
         text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
         -webkit-transform: translate3d(-50%, 0, 0);
+        -moz-transform: translate3d(-50%, 0, 0);
         transform: translate3d(-50%, 0, 0); } }
 
 .donation {
@@ -2509,7 +2510,9 @@ body {
   position: absolute;
   left: 50%;
   top: 0;
-  -webkit-transform: translateX(-50%);
+  -webkit-transform: translate3d(-50%, 0, 0);
+  -moz-transform: translate3d(-50%, 0, 0);
+  transform: translate3d(-50%, 0, 0);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;

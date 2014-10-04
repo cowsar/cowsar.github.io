@@ -35,7 +35,7 @@
             position: absolute;
             left: 50%;
             top: 0;
-            -webkit-transform: translateX(-50%);
+            @include transform3d(-50%);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
