@@ -32,14 +32,14 @@
             height: 100px;
             width: 100px;
             display: block;
-            text-align: center;
             position: absolute;
             left: 50%;
             top: 0;
-            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
+            margin-left: 10px;
         }
 
             .skills__icon--high-angle {
