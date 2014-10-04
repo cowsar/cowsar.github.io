@@ -2406,74 +2406,46 @@ body {
     margin: 0 auto; } }
 
 .site-head {
-  height: 350px;
-  position: relative; }
-  @media screen and (min-width: 1024px) {
-    .site-head {
-      height: 500px; } }
-
-.site-head__image {
-  background-image: url(/assets/images/cover-image.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 200px; }
-  @media screen and (min-width: 768px) {
-    .site-head__image {
-      height: 350px; } }
-  @media screen and (min-width: 1024px) {
-    .site-head__image {
-      height: 500px; } }
-
-.site-logo {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  background-image: url(/assets/images/site-logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 141px;
-  height: 184px;
-  position: absolute;
-  left: 50%;
-  top: 175px;
-  transform: translateX(-50%) translateY(-40%); }
-  @media screen and (min-width: 768px) {
-    .site-logo {
-      transform: translate3d(-50%, -50%, 0); } }
-  @media screen and (min-width: 1024px) {
-    .site-logo {
-      top: 50%;
-      transform: translate3d(-50%, -50%, 0); } }
-
-.site-tagline {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  font-size: 16.5px;
-  text-align: center;
-  color: #1D5584;
-  font-weight: 400;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 480px; }
-  @media screen and (min-width: 768px) {
-    .site-tagline {
-      color: white;
-      margin: 0 auto;
-      top: 275px;
-      text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); } }
-  @media screen and (min-width: 1024px) {
-    .site-tagline {
-      top: 350px; } }
+  margin-bottom: 20px; }
+  .site-head .site-head__bg {
+    background-image: url(/assets/images/cover-image.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px; }
+    @media screen and (min-width: 768px) {
+      .site-head .site-head__bg {
+        height: 350px; } }
+    @media screen and (min-width: 1024px) {
+      .site-head .site-head__bg {
+        height: 500px; } }
+  .site-head .site-logo {
+    width: 141px;
+    height: 184px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -92px; }
+  .site-head .site-name {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0; }
+  .site-head .site-tagline {
+    font-size: 16.5px;
+    text-align: center;
+    color: #1D5584;
+    font-weight: 400;
+    width: 100%;
+    max-width: 480px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (min-width: 768px) {
+      .site-head .site-tagline {
+        color: white;
+        margin: 0 auto;
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5); } }
 
 .donation {
   background-color: #0F4068;
