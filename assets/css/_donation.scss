@@ -1,11 +1,12 @@
 .donation {
     @extend .hidden-xs;
-    @extend %clearfix;
+    @extend %grid;
 
     background-color: $color--primary-dark;
     color: $color--inverse-text;
-    padding: $gutter--narrow $gutter--narrow;
+    padding: $gutter--normal $gutter--normal;
     margin-bottom: $gutter--normal;
+    position: relative;
 
     @include media-query($medium, min, width, screen) {
         padding-left: $gutter--normal;
@@ -22,7 +23,21 @@
         margin: 0;
     }
 
-
     .donation__button {
-        float: right;
+
+    }
+
+    .donation__left {
+        @extend %grid__item;
+        @extend %medium--four-fifths;
+    }
+
+    .donation__right {
+        @extend %grid__item;
+        @extend %medium--one-fifth;
+
+        position: absolute;
+        top: 50%;
+
+        @include transform3d(0,-50%,0);
     }

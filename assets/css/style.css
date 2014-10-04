@@ -2017,11 +2017,6 @@ th {
 .fa-meanpath:before {
   content: ""; }
 
-.donation:after {
-  content: "";
-  display: table;
-  clear: both; }
-
 @media screen and (max-width: 767px) {
   .hidden-xs, .donation, .skills__item:nth-of-type(4) p, .about, .education__item:nth-of-type(1),
   .education__item:nth-of-type(2), .twitter-feed {
@@ -2159,7 +2154,7 @@ th {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns’ gutters.
  */
-.skills, .about, .education,
+.donation, .skills, .about, .education,
 .education__sub-grid, .site-foot {
   list-style: none;
   /* [1] */
@@ -2177,7 +2172,7 @@ th {
  * 4. Full-width unless told to behave otherwise.
  * 5. Required to combine fluid widths and fixed gutters.
  */
-.skills__item, .about__title, .about__content, .education__item,
+.donation__left, .donation__right, .skills__item, .about__title, .about__content, .education__item,
 .education__sub-item, .contact-info, .site-copyright {
   display: inline-block;
   /* [1] */
@@ -2319,6 +2314,12 @@ th {
   /**
    * Fifths
    */
+  .donation__right {
+    width: 20%; }
+
+  .donation__left {
+    width: 80%; }
+
   /**
    * Sixths
    */
@@ -2822,8 +2823,9 @@ body {
 .donation {
   background-color: #0F4068;
   color: white;
-  padding: 10px 10px;
-  margin-bottom: 20px; }
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  position: relative; }
   @media screen and (min-width: 768px) {
     .donation {
       padding-left: 20px;
@@ -2836,8 +2838,12 @@ body {
 .donation__text {
   margin: 0; }
 
-.donation__button {
-  float: right; }
+.donation__right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+  -moz-transform: translate3d(0, -50%, 0);
+  transform: translate3d(0, -50%, 0); }
 
 .skills {
   padding: 0 10px;
