@@ -1,3 +1,4 @@
 *.scssc
 bower_components
 *.map
+node_modules
