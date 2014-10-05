@@ -1,0 +1,15 @@
+<div class="donation  hidden-xs">
+
+    <div class="donation__left">
+
+        {% capture teaser %}{% include_relative teasers/donation.markdown %}{% endcapture %}
+        {{ teaser | markdownify }}
+
+    </div><!--
+
+ --><div class="donation__right">
+        <a class="donation__button  button  button--paypal  button"
+           href="#">Donate with <span class="paypal--dark">Pay</span><span class="paypal--light">Pal</span></a>
+    </div>
+
+</div>

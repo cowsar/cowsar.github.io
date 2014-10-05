@@ -1,0 +1,29 @@
+.about {
+    @extend %grid;
+    @extend .hidden-xs;
+
+    background-color: $color--primary-light;
+    color: $color--inverse-text;
+    margin-bottom: $gutter--normal;
+    padding: $gutter--normal $gutter--normal;
+}
+
+    .about h1 {
+        @extend %grid__item;
+        @extend %medium--one-whole;
+
+        margin-bottom: $gutter--skinny;
+        margin-top: 0;
+    }
+
+
+
+    .about__content {
+        @extend %grid__item;
+        @extend %medium--one-whole;
+
+        -moz-column-count:2; /* Firefox */
+        -webkit-column-count:2; /* Safari and Chrome */
+        column-count:2;
+
+    }

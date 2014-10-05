@@ -1,0 +1,38 @@
+<div class="skills">
+    <div class="skills__item  skills__item--high-angle">
+
+        <div class="skills__icon"></div>
+
+        {% capture teaser %}{% include_relative teasers/high-angle-rescue.markdown %}{% endcapture %}
+        {{ teaser | markdownify }}
+
+    </div><!--
+
+ --><div class="skills__item  skills__item--gsar">
+
+        <div class="skills__icon"></div>
+
+        {% capture teaser %}{% include_relative teasers/ground-sar.markdown %}{% endcapture %}
+        {{ teaser | markdownify }}
+
+    </div><!--
+
+ --><div class="skills__item  skills__item--swiftwater">
+
+        <div class="skills__icon"></div>
+
+        {% capture teaser %}{% include_relative teasers/swiftwater.markdown %}{% endcapture %}
+        {{ teaser | markdownify }}
+
+    </div><!--
+
+
+
+ --><div class="skills__item">
+
+        {% capture teaser %}{% include_relative teasers/skills.markdown %}{% endcapture %}
+        {{ teaser | markdownify }}
+
+        <button class="skills__button  button  button--secondary">More about our skills</button>
+    </div>
+</div>

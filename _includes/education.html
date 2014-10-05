@@ -1,0 +1,33 @@
+<div class="education">
+    <div class="education__item">
+        <img class="education__icon  education__icon--adventure-smart" src="/assets/images/adventure-smart_logo.jpg">
+
+        {% capture teaser %}{% include_relative teasers/adventure-smart.markdown %}{% endcapture %}
+        {{ teaser | markdownify }}
+    </div><!--
+
+
+ --><div class="education__item">
+        <img class="education__icon  education__item--hug-a-tree" src="/assets/images/hugatreelogo.gif">
+
+        {% capture teaser %}{% include_relative teasers/hug-a-tree.markdown %}{% endcapture %}
+        {{ teaser | markdownify }}
+    </div><!--
+
+
+ --><div class="education__item  education__item--education">
+        <div class="education__sub-grid">
+            <div class="education__sub-item">
+                <div class="skills__icon"></div>
+
+                {% capture teaser %}{% include_relative teasers/public-education.markdown %}{% endcapture %}
+                {{ teaser | markdownify }}
+            </div><!--
+
+
+         --><div class="education__sub-item">
+                <button class="education__button  button  button--secondary">More about our Education</button>
+            </div>
+        </div>
+    </div>
+</div>
