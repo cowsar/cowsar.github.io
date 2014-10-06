@@ -4,7 +4,7 @@ module.exports = ->
         options:
             sourceMap: true
         expand: true
-        cwd:    'js/'
+        cwd:    'assets/js/'
         src:    '**/*.coffee'
-        dest:   'js/'
+        dest:   'assets/js/'
         ext:    '.js'

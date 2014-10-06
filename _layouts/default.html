@@ -5,13 +5,22 @@
 
   <body>
 
-    {% include page-head.html %}
+    {% include site-nav.html %}
 
-    {% include donation.html %}
+    <div class="site-wrap">
 
-    {{ content }}
+        {% include page-head.html %}
 
-    {% include page-foot.html %}
+        {% include donation.html %}
+
+        {{ content }}
+
+        {% include page-foot.html %}
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/js/site-nav.js"></script>
 
   </body>
 

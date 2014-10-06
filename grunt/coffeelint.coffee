@@ -2,4 +2,4 @@
 module.exports = ->
     build:
         files:
-            src: 'js/**/*.coffee'
+            src: 'assets/js/**/*.coffee'
