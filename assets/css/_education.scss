@@ -50,7 +50,7 @@
             }
         }
 
-        .education__title {
+        .education__item h1 {
             @include media-query($medium, min, width, screen) {
                 @include text-hide();
             }
