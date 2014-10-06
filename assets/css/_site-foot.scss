@@ -19,25 +19,30 @@
                 margin: 10px 0;
             }
 
-                i {
+                .contact-info__address i {
                     @extend .fa-li;
                     @extend .fa;
-
-                    .contact-info__address & {
-                        @extend .fa-map-marker;
-                    }
-                    .contact-info__email & {
-                        @extend .fa-envelope;
-                    }
-                    .contact-info__telephone & {
-                        @extend .fa-phone;
-                    }
-                    .contact-info__twitter & {
-                        @extend .fa-twitter;
-                    }
-                    .contact-info__facebook & {
-                        @extend .fa-facebook;
-                    }
+                    @extend .fa-map-marker;
+                }
+                .contact-info__email i {
+                    @extend .fa-li;
+                    @extend .fa;
+                    @extend .fa-envelope;
+                }
+                .contact-info__telephone i {
+                    @extend .fa-li;
+                    @extend .fa;
+                    @extend .fa-phone;
+                }
+                .contact-info__twitter i {
+                    @extend .fa-li;
+                    @extend .fa;
+                    @extend .fa-twitter;
+                }
+                .contact-info__facebook i {
+                    @extend .fa-li;
+                    @extend .fa;
+                    @extend .fa-facebook;
                 }
 
                 a {
