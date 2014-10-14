@@ -76,6 +76,12 @@
         .skills__button {
             @extend %grid__item;
             @extend %small--one-whole;
+
+            @include media-query($medium, min, width, screen) {
+                float: right;
+                display: block;
+                width: auto;
+            }
         }
 
         .page-home .skills__item:nth-of-type(4) {

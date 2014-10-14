@@ -25,14 +25,6 @@ body {
     padding: 0;
 }
 
-
-.site-wrapper {
-    @include media-query($large, min, width, screen) {
-        max-width: 1024px;
-        margin: 0 auto;
-    }
-}
-
 @import "page-elements";
 
 @import "site-nav";

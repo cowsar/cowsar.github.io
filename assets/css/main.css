@@ -2750,11 +2750,6 @@ body {
   margin: 0;
   padding: 0; }
 
-@media screen and (min-width: 1024px) {
-  .site-wrapper {
-    max-width: 1024px;
-    margin: 0 auto; } }
-
 article {
   padding: 0 10px; }
   @media screen and (min-width: 768px) {
@@ -3055,6 +3050,12 @@ article .content {
   margin-bottom: 5px;
   margin-top: 10px; }
 
+@media screen and (min-width: 768px) {
+  .skills__button {
+    float: right;
+    display: block;
+    width: auto; } }
+
 .page-home .skills__item:nth-of-type(4) {
   text-align: right;
   padding-top: 0; }
@@ -3120,6 +3121,10 @@ article .content {
       text-shadow: none;
       background-color: transparent;
       border: 0; } }
+
+@media screen and (min-width: 768px) {
+  .education__button {
+    width: auto; } }
 
 .education__icon {
   max-width: 100%;

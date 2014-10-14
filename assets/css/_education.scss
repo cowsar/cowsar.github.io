@@ -66,6 +66,10 @@
         .education__button {
             @extend %grid__item;
             @extend %small--one-whole;
+
+            @include media-query($medium, min, width, screen) {
+                width: auto;
+            }
         }
 
         .education__icon {
