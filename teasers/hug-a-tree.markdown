@@ -1,3 +1,3 @@
 # Hug a Tree Program
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+An AdventureSmart program that helps lost children survive in the woods. This presentation is aimed at children in Grades K-5. It teaches children how not to become lost in the woods, and what to do if they should become lost.

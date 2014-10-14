@@ -1,0 +1,35 @@
+---
+layout: default
+permalink: /education/index.html
+class: page-education
+title: Public Education
+---
+
+<article markdown="1">
+
+    {% capture skills %}{% include_relative content/education.markdown %}{% endcapture %}
+    {{ skills | markdownify }}
+
+    <div class="skills">
+        <div class="education__item">
+            <img class="education__icon  education__icon--adventure-smart" src="/assets/images/adventure-smart_logo.jpg">
+
+            {% capture teaser %}{% include_relative teasers/adventure-smart.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+            <a class="button" href="https://www.adventuresmart.ca/">Find out more about Adventure Smart</a>
+        </div><!--
+
+
+     --><div class="education__item">
+            <img class="education__icon  education__item--hug-a-tree" src="/assets/images/hugatreelogo.gif">
+
+            {% capture teaser %}{% include_relative teasers/hug-a-tree.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+            <a class="button" href="https://www.adventuresmart.ca/kids/hugatree.htm">Learn more about the Hug-A-Tree Program</a>
+        </div>
+
+    </div>
+
+</article>

@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: /join/index.html
+class: page-join
+title: Join Us
+---
+
+<article markdown="1">
+
+    {% capture skills %}{% include_relative content/join.markdown %}{% endcapture %}
+    {{ skills | markdownify }}
+
+</article>

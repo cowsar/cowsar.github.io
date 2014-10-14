@@ -2019,8 +2019,8 @@ th {
   content: ""; }
 
 @media screen and (max-width: 767px) {
-  .hidden-xs, .donation, .skills__item:nth-of-type(4) p, .about, .education__item:nth-of-type(1),
-  .education__item:nth-of-type(2), .twitter-feed {
+  .hidden-xs, .donation, .page-home .skills__item:nth-of-type(4) p, .about, .page-home .education__item:nth-of-type(1),
+  .page-home .education__item:nth-of-type(2), .twitter-feed {
     display: none !important; } }
 
 @media screen and (min-width: 768px) {
@@ -2225,7 +2225,7 @@ th {
 /**
  * Whole
  */
-.site-copyright {
+.contact-info, .site-copyright {
   width: 100%; }
 
 /**
@@ -2291,13 +2291,14 @@ th {
   /**
    * Whole
    */
-  .skills__item:nth-of-type(4), .about h1, .about__content {
+  .page-home .skills__item:nth-of-type(4), .about h1, .about__content {
     width: 100%; }
 
   /**
    * Halves
    */
-  .education__item:nth-of-type(1),
+  .page-skills .skills__item:nth-of-type(4),
+  .page-skills .skills__item:nth-of-type(5), .education__item:nth-of-type(1),
   .education__item:nth-of-type(2) {
     width: 50%; }
 
@@ -2751,6 +2752,22 @@ body {
     max-width: 1024px;
     margin: 0 auto; } }
 
+article {
+  padding: 0 10px; }
+  @media screen and (min-width: 768px) {
+    article {
+      padding: 0 20px;
+      margin: 0 auto; } }
+
+@media screen and (min-width: 768px) {
+  article .columns {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; } }
+
+article .content {
+  column-break-inside: avoid; }
+
 /**
  * Very simple, pared-back, mobile-first, responsive nav.
  */
@@ -3021,6 +3038,10 @@ body {
     background-image: url(/assets/images/icons/gsar.svg); }
   .skills__item--swiftwater .skills__icon {
     background-image: url(/assets/images/icons/swiftwater.svg); }
+  .skills__item--avalanche .skills__icon {
+    background-image: url(/assets/images/icons/avalanche.svg); }
+  .skills__item--tracking .skills__icon {
+    background-image: url(/assets/images/icons/tracking.svg); }
   .education__item--education .skills__icon {
     background-image: url(/assets/images/icons/education.svg); }
 
@@ -3028,10 +3049,10 @@ body {
   margin-bottom: 5px;
   margin-top: 10px; }
 
-.skills__item:nth-of-type(4) {
+.page-home .skills__item:nth-of-type(4) {
   text-align: right;
   padding-top: 0; }
-  .skills__item:nth-of-type(4) p {
+  .page-home .skills__item:nth-of-type(4) p {
     text-align: left; }
 
 .about {
@@ -3079,13 +3100,19 @@ body {
   .education__sub-item:nth-of-type(1) {
     padding-top: 100px; } }
 
-@media screen and (min-width: 768px) {
-  .education__item h1 {
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    background-color: transparent;
-    border: 0; } }
+.education__item h1 {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+  @media screen and (min-width: 767px) {
+    .education__item h1 {
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      background-color: transparent;
+      border: 0; } }
 
 .education__icon {
   max-width: 100%;
@@ -3096,12 +3123,17 @@ body {
   margin-top: 20px;
   color: white; }
 
+.contact-info {
+  text-align: center; }
+
 .contact-info__list {
   padding: 0 10px; }
 
 .contact-info__item {
   font-size: 16.5px;
-  margin: 10px 0; }
+  margin: 10px 0;
+  display: inline-block;
+  margin-left: 40px; }
 
 a {
   color: white;

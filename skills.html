@@ -1,0 +1,61 @@
+---
+layout: default
+permalink: /skills/index.html
+class: page-skills
+title: Skills
+---
+
+<article markdown="1">
+
+    {% capture skills %}{% include_relative content/skills.markdown %}{% endcapture %}
+    {{ skills | markdownify }}
+
+    <div class="skills">
+        <div class="skills__item  skills__item--high-angle">
+
+            <div class="skills__icon"></div>
+
+            {% capture teaser %}{% include_relative teasers/high-angle-rescue.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+        </div><!--
+
+     --><div class="skills__item  skills__item--gsar">
+
+            <div class="skills__icon"></div>
+
+            {% capture teaser %}{% include_relative teasers/ground-sar.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+        </div><!--
+
+     --><div class="skills__item  skills__item--swiftwater">
+
+            <div class="skills__icon"></div>
+
+            {% capture teaser %}{% include_relative teasers/swiftwater.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+        </div><!--
+
+     --><div class="skills__item  skills__item--avalanche">
+
+            <div class="skills__icon"></div>
+
+            {% capture teaser %}{% include_relative teasers/avalanche.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+        </div><!--
+
+     --><div class="skills__item  skills__item--tracking">
+
+            <div class="skills__icon"></div>
+
+            {% capture teaser %}{% include_relative teasers/tracking.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+        </div>
+
+    </div>
+
+</article>

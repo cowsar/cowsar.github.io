@@ -1,0 +1,20 @@
+
+article {
+    padding: 0 $gutter--narrow;
+
+    @include media-query($medium, min, width, screen) {
+        padding: 0 $gutter--normal;
+        margin: 0 auto;
+    }
+}
+
+article .columns {
+
+    @include media-query($medium, min, width, screen) {
+        column-count: 2;
+    }
+}
+
+article .content {
+    column-break-inside: avoid;
+}

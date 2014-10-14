@@ -50,6 +50,12 @@
             .skills__item--swiftwater & {
                 background-image: url(/assets/images/icons/swiftwater.svg);
             }
+            .skills__item--avalanche & {
+                background-image: url(/assets/images/icons/avalanche.svg);
+            }
+            .skills__item--tracking & {
+                background-image: url(/assets/images/icons/tracking.svg);
+            }
             .education__item--education & {
                 @extend .visible-xs;
                 background-image: url(/assets/images/icons/education.svg);
@@ -63,21 +69,24 @@
             margin-top: $gutter--narrow;
         }
 
-        .skills__item:nth-of-type(4) {
-            @extend %medium--one-whole;
-
-            text-align: right;
-            padding-top: 0;
-
-            p {
-                @extend .hidden-xs;
-
-                text-align: left;
-            }
-        }
-
         .skills__button {
             @extend %small--one-whole;
         }
 
+        .page-home .skills__item:nth-of-type(4) {
+                @extend %medium--one-whole;
 
+                text-align: right;
+                padding-top: 0;
+
+                p {
+                    @extend .hidden-xs;
+
+                    text-align: left;
+                }
+            }
+
+        .page-skills .skills__item:nth-of-type(4),
+        .page-skills .skills__item:nth-of-type(5) {
+            @extend %medium--one-half;
+        }

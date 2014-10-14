@@ -22,8 +22,13 @@
 
     .education__item:nth-of-type(1),
     .education__item:nth-of-type(2) {
-        @extend .hidden-xs;
+
         @extend %medium--one-half;
+    }
+
+    .page-home  .education__item:nth-of-type(1),
+    .page-home  .education__item:nth-of-type(2) {
+        @extend .hidden-xs;
     }
 
     .education__sub-item {
@@ -51,7 +56,9 @@
         }
 
         .education__item h1 {
-            @include media-query($medium, min, width, screen) {
+            @include text-hide();
+
+            @include media-query($small, min, width, screen) {
                 @include text-hide();
             }
         }

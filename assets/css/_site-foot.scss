@@ -7,6 +7,9 @@
 
     .contact-info {
         @extend %grid__item;
+        @extend %one-whole;
+
+        text-align: center;
     }
 
         .contact-info__list {
@@ -17,6 +20,8 @@
             .contact-info__item {
                 font-size: $font-size--big;
                 margin: 10px 0;
+                display: inline-block;
+                margin-left: $gutter--normal * 2;
             }
 
                 .contact-info__address i {

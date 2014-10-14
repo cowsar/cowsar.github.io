@@ -8,8 +8,18 @@
     </div><!--
 
  --><div class="donation__right">
-        <a class="donation__button  button  button--paypal  button"
-           href="#">Donate with <span class="paypal--dark">Pay</span><span class="paypal--light">Pal</span></a>
+       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="info@cowichansar.org">
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="Cowichan Search and Rescue">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="currency_code" value="CAD">
+            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+            <button class="donation__button  button  button--paypal  button" type="submit" name="submit" alt="PayPal - The safer, easier way to pay online!">Donate with <span class="paypal--dark">Pay</span><span class="paypal--light">Pal</span></button>
+        </form>
+
     </div>
 
 </div>
+

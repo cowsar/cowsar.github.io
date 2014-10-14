@@ -1,32 +1,32 @@
 <nav class="site-nav"
      id="js-site-nav">
     <ul class="site-nav__list">
-        <li class="site-nav__item  site-nav__item--active">
+        <li class="site-nav__item  {% if page.class == "page-about" %}site-nav__item--active{% endif %}">
             <a class="site-nav__link"
-               href="#">About Cowichan SAR</a></li>
-        <li class="site-nav__item">
+               href="/about">About Cowichan SAR</a></li>
+        <li class="site-nav__item  {% if page.class == "page-skills" %}site-nav__item--active{% endif %}">
             <a class="site-nav__link"
-               href="#">Our Skills</a></li>
-        <li class="site-nav__item">
+               href="/skills">Our Skills</a></li>
+        <li class="site-nav__item  {% if page.class == "page-education" %}site-nav__item--active{% endif %}">
             <a class="site-nav__link"
-               href="#">Public Education</a></li>
-        <li class="site-nav__item">
+               href="/education">Public Education</a></li>
+<!--         <li class="site-nav__item  {% if page.class == "page-fundraising" %}site-nav__item--active{% endif %}">
             <a class="site-nav__link"
-               href="#">Fundraising</a></li>
-        <li class="site-nav__item">
+               href="#">Fundraising</a></li> -->
+<!--         <li class="site-nav__item  {% if page.class == "page-donations" %}site-nav__item--active{% endif %}">
             <a class="site-nav__link"
-               href="#">Donatations</a></li>
-        <li class="site-nav__item">
+               href="#">Donatations</a></li> -->
+        <li class="site-nav__item  {% if page.class == "page-join" %}site-nav__item--active{% endif %}">
             <a class="site-nav__link"
-               href="#">Join Us</a></li>
-        <li class="site-nav__item">
+               href="/join">Join Us</a></li>
+        <li class="site-nav__item  {% if page.class == "page-contact" %}site-nav__item--active{% endif %}">
             <a class="site-nav__link"
-               href="#">Contact Cowichan SAR</a></li>
+               href="#contact">Contact Cowichan SAR</a></li>
         <li class="site-nav__item  site-nav__item--facebook">
             <a class="site-nav__link"
-               href="#"><i></i><span> Find us on Facebook</span></a></li>
+               href="//www.facebook.com/CowichanSaR"><i></i><span> Find us on Facebook</span></a></li>
         <li class="site-nav__item  site-nav__item--twitter">
             <a class="site-nav__link"
-               href="#"><i></i><span> Follow us on Twitter</span></a></li>
+               href="//twitter.com/cowichansar"><i></i><span> Follow us on Twitter</span></a></li>
     </ul>
 </nav>
