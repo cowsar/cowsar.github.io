@@ -1,5 +1,6 @@
 .site-foot {
     @extend %grid;
+
     background-color: $color--primary;
     margin-top: $gutter--normal;
     color: $color--inverse-text;
@@ -13,41 +14,51 @@
     }
 
         .contact-info__list {
-            @extend .fa-ul;
+            @extend %grid;
+
             padding: 0 $gutter--narrow;
         }
 
             .contact-info__item {
+                @extend %grid__item;
+                @extend %small--one-whole;
+                @extend %medium--one-half;
+                @extend %large--one-quarter;
+
                 font-size: $font-size--big;
                 margin: 10px 0;
                 display: inline-block;
-                margin-left: $gutter--normal * 2;
             }
 
                 .contact-info__address i {
-                    @extend .fa-li;
                     @extend .fa;
                     @extend .fa-map-marker;
+
+                    margin-right: $gutter--skinny;
                 }
                 .contact-info__email i {
-                    @extend .fa-li;
                     @extend .fa;
                     @extend .fa-envelope;
+
+                    margin-right: $gutter--skinny;
                 }
                 .contact-info__telephone i {
-                    @extend .fa-li;
                     @extend .fa;
                     @extend .fa-phone;
+
+                    margin-right: $gutter--skinny;
                 }
                 .contact-info__twitter i {
-                    @extend .fa-li;
                     @extend .fa;
                     @extend .fa-twitter;
+
+                    margin-right: $gutter--skinny;
                 }
                 .contact-info__facebook i {
-                    @extend .fa-li;
                     @extend .fa;
                     @extend .fa-facebook;
+
+                    margin-right: $gutter--skinny;
                 }
 
                 a {

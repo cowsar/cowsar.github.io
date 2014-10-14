@@ -18,6 +18,7 @@
 
         text-align: center;
         position: relative;
+        margin-bottom: $gutter--normal;
     }
 
     .education__item:nth-of-type(1),
@@ -63,6 +64,7 @@
             }
         }
         .education__button {
+            @extend %grid__item;
             @extend %small--one-whole;
         }
 
@@ -72,5 +74,6 @@
         }
 
 
-
-
+.page-education .skills {
+    border-bottom: none;
+}

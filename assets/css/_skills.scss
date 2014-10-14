@@ -16,6 +16,10 @@
     }
 }
 
+.page-skills .skills {
+    border-bottom: none;
+}
+
     .skills__item {
         @extend %grid__item;
         @extend %small--one-whole;
@@ -70,6 +74,7 @@
         }
 
         .skills__button {
+            @extend %grid__item;
             @extend %small--one-whole;
         }
 
