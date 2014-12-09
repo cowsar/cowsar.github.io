@@ -2019,7 +2019,7 @@ th {
   content: ""; }
 
 @media screen and (max-width: 767px) {
-  .hidden-xs, .donation, .about, .page-home .education__item:nth-of-type(1),
+  .hidden-xs, .donation, .page-home .skills__item:nth-of-type(4) p, .about, .page-home .education__item:nth-of-type(1),
   .page-home .education__item:nth-of-type(2), .twitter-feed {
     display: none !important; } }
 
@@ -2291,19 +2291,22 @@ th {
   /**
    * Whole
    */
-  .about h1, .about__content {
+  .page-home .skills__item:nth-of-type(4), .about h1, .about__content {
     width: 100%; }
 
   /**
    * Halves
    */
-  .skills__item, .education__item:nth-of-type(1),
+  .page-skills .skills__item, .education__item:nth-of-type(1),
   .education__item:nth-of-type(2), .contact-info__item {
     width: 50%; }
 
   /**
    * Thirds
    */
+  .skills__item {
+    width: 33.333%; }
+
   /**
    * Quarters
    */
@@ -3066,26 +3069,12 @@ article a {
     display: block;
     width: auto; } }
 
-/*
-        .page-home .skills__item:nth-of-type(4) {
-            @extend %medium--one-whole;
+.page-home .skills__item:nth-of-type(4) {
+  text-align: right;
+  padding-top: 0; }
+  .page-home .skills__item:nth-of-type(4) p {
+    text-align: left; }
 
-            text-align: right;
-            padding-top: 0;
-
-            p {
-                @extend .hidden-xs;
-
-                text-align: left;
-            }
-        }
-*/
-/*
-        .page-skills .skills__item:nth-of-type(4),
-        .page-skills .skills__item:nth-of-type(5) {
-            @extend %medium--one-half;
-        }
-*/
 .about {
   background-color: #1D5584;
   color: white;

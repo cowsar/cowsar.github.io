@@ -23,7 +23,7 @@
     .skills__item {
         @extend %grid__item;
         @extend %small--one-whole;
-        @extend %medium--one-half;
+        @extend %medium--one-third;
 
         text-align: center;
         padding-top: 100px;
@@ -84,7 +84,6 @@
             }
         }
 
-/*
         .page-home .skills__item:nth-of-type(4) {
             @extend %medium--one-whole;
 
@@ -97,11 +96,7 @@
                 text-align: left;
             }
         }
-*/
 
-/*
-        .page-skills .skills__item:nth-of-type(4),
-        .page-skills .skills__item:nth-of-type(5) {
+        .page-skills .skills__item {
             @extend %medium--one-half;
         }
-*/
