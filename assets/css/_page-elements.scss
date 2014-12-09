@@ -18,3 +18,7 @@ article .columns {
 article .content {
     column-break-inside: avoid;
 }
+
+article a {
+    color: $color--primary;
+}

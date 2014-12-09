@@ -1,0 +1,5 @@
+Swift water is any moving water that has the possibility of knocking someone off their feet. BC is a province full of rivers and streams and has a significant flooding event every year with ice melt (see the [BC River forecast centre](http://bcrfc.env.gov.bc.ca/) for more information on this).
+
+There is a significant amount of exposure to swift water in the form of fishing, boating, kayaking and white water rafting in BC and there is a need for rescue services both for members of the public, and to keep SAR volunteers safe while searching river banks.
+
+Swift Water Rescue training is very involved, with some courses lasting several days and covering aspects such as boat operations, shoreline rescue, disentanglement, swimming and “line across” techniques. Certifications from operations to instructor are offered.

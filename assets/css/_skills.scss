@@ -23,7 +23,7 @@
     .skills__item {
         @extend %grid__item;
         @extend %small--one-whole;
-        @extend %medium--one-third;
+        @extend %medium--one-half;
 
         text-align: center;
         padding-top: 100px;
@@ -84,20 +84,24 @@
             }
         }
 
+/*
         .page-home .skills__item:nth-of-type(4) {
-                @extend %medium--one-whole;
+            @extend %medium--one-whole;
 
-                text-align: right;
-                padding-top: 0;
+            text-align: right;
+            padding-top: 0;
 
-                p {
-                    @extend .hidden-xs;
+            p {
+                @extend .hidden-xs;
 
-                    text-align: left;
-                }
+                text-align: left;
             }
+        }
+*/
 
+/*
         .page-skills .skills__item:nth-of-type(4),
         .page-skills .skills__item:nth-of-type(5) {
             @extend %medium--one-half;
         }
+*/

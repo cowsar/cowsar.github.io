@@ -7,7 +7,6 @@
     }
 
     .site-head__bg {
-        background-image: url(/assets/images/cover-image.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -21,6 +20,14 @@
             height: 500px;
         }
     }
+
+        .header1 { background-image: url(/assets/images/header1.jpg); }
+        .header2 { background-image: url(/assets/images/header2.jpg); }
+        .header3 { background-image: url(/assets/images/header3.jpg); }
+        .header4 { background-image: url(/assets/images/header4.jpg); }
+        .header5 { background-image: url(/assets/images/header5.jpg); }
+        .header6 { background-image: url(/assets/images/header6.jpg); }
+
 
     .site-logo {
         width: 141px;

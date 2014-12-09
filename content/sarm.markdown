@@ -1,0 +1,3 @@
+Far from being paid, these individuals are experienced searchers who had risen through the ranks to become trained incident commanders, proficient in understanding maps, search theory, and the tactics and strategies for find all manner of missing persons.
+
+SAR Managers in BC take specialized courses in the [Incident Command System](http://en.wikipedia.org/wiki/Incident_Command_System) (ICS), and working side by side with the RCMP and police, BC Coroner’s service, and other emergency responders, are responsible for the safety of their respective search groups. Some searches in BC can last for days and involve thousands of square kilometres of wilderness, and these highly trained volunteers run those searches.

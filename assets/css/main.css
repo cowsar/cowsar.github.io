@@ -2019,7 +2019,7 @@ th {
   content: ""; }
 
 @media screen and (max-width: 767px) {
-  .hidden-xs, .donation, .page-home .skills__item:nth-of-type(4) p, .about, .page-home .education__item:nth-of-type(1),
+  .hidden-xs, .donation, .about, .page-home .education__item:nth-of-type(1),
   .page-home .education__item:nth-of-type(2), .twitter-feed {
     display: none !important; } }
 
@@ -2291,23 +2291,19 @@ th {
   /**
    * Whole
    */
-  .page-home .skills__item:nth-of-type(4), .about h1, .about__content {
+  .about h1, .about__content {
     width: 100%; }
 
   /**
    * Halves
    */
-  .page-skills .skills__item:nth-of-type(4),
-  .page-skills .skills__item:nth-of-type(5), .education__item:nth-of-type(1),
+  .skills__item, .education__item:nth-of-type(1),
   .education__item:nth-of-type(2), .contact-info__item {
     width: 50%; }
 
   /**
    * Thirds
    */
-  .skills__item {
-    width: 33.333%; }
-
   /**
    * Quarters
    */
@@ -2766,6 +2762,9 @@ article {
 article .content {
   column-break-inside: avoid; }
 
+article a {
+  color: #356993; }
+
 /**
  * Very simple, pared-back, mobile-first, responsive nav.
  */
@@ -2922,7 +2921,6 @@ article .content {
       position: relative;
       margin-bottom: 0; } }
   .site-head .site-head__bg {
-    background-image: url(/assets/images/cover-image.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2933,6 +2931,18 @@ article .content {
     @media screen and (min-width: 1024px) {
       .site-head .site-head__bg {
         height: 500px; } }
+  .site-head .header1 {
+    background-image: url(/assets/images/header1.jpg); }
+  .site-head .header2 {
+    background-image: url(/assets/images/header2.jpg); }
+  .site-head .header3 {
+    background-image: url(/assets/images/header3.jpg); }
+  .site-head .header4 {
+    background-image: url(/assets/images/header4.jpg); }
+  .site-head .header5 {
+    background-image: url(/assets/images/header5.jpg); }
+  .site-head .header6 {
+    background-image: url(/assets/images/header6.jpg); }
   .site-head .site-logo {
     width: 141px;
     height: 184px;
@@ -3056,12 +3066,26 @@ article .content {
     display: block;
     width: auto; } }
 
-.page-home .skills__item:nth-of-type(4) {
-  text-align: right;
-  padding-top: 0; }
-  .page-home .skills__item:nth-of-type(4) p {
-    text-align: left; }
+/*
+        .page-home .skills__item:nth-of-type(4) {
+            @extend %medium--one-whole;
 
+            text-align: right;
+            padding-top: 0;
+
+            p {
+                @extend .hidden-xs;
+
+                text-align: left;
+            }
+        }
+*/
+/*
+        .page-skills .skills__item:nth-of-type(4),
+        .page-skills .skills__item:nth-of-type(5) {
+            @extend %medium--one-half;
+        }
+*/
 .about {
   background-color: #1D5584;
   color: white;

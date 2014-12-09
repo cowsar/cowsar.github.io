@@ -10,13 +10,19 @@ title: Skills
     {% capture skills %}{% include_relative content/skills.markdown %}{% endcapture %}
     {{ skills | markdownify }}
 
-    <div class="skills">
-        <div class="skills__item  skills__item--high-angle">
+    <div class="skills"><!--
+
+     --><div class="skills__item  skills__item--tracking">
 
             <div class="skills__icon"></div>
 
-            {% capture teaser %}{% include_relative teasers/high-angle-rescue.markdown %}{% endcapture %}
+            {% capture teaser %}{% include_relative teasers/tracking.markdown %}{% endcapture %}
             {{ teaser | markdownify }}
+
+            <div class="skills__extended">
+                {% capture content %}{% include_relative content/tracking.markdown %}{% endcapture %}
+                {{ content | markdownify }}
+            </div>
 
         </div><!--
 
@@ -36,6 +42,11 @@ title: Skills
             {% capture teaser %}{% include_relative teasers/swiftwater.markdown %}{% endcapture %}
             {{ teaser | markdownify }}
 
+            <div class="skills__extended">
+                {% capture content %}{% include_relative content/swiftwater.markdown %}{% endcapture %}
+                {{ content | markdownify }}
+            </div>
+
         </div><!--
 
      --><div class="skills__item  skills__item--avalanche">
@@ -45,14 +56,36 @@ title: Skills
             {% capture teaser %}{% include_relative teasers/avalanche.markdown %}{% endcapture %}
             {{ teaser | markdownify }}
 
+            <div class="skills__extended">
+                {% capture content %}{% include_relative content/avalanche.markdown %}{% endcapture %}
+                {{ content | markdownify }}
+            </div>
+
         </div><!--
 
-     --><div class="skills__item  skills__item--tracking">
+     --><div class="skills__item  skills__item--high-angle">
 
             <div class="skills__icon"></div>
 
-            {% capture teaser %}{% include_relative teasers/tracking.markdown %}{% endcapture %}
+            {% capture teaser %}{% include_relative teasers/high-angle-rescue.markdown %}{% endcapture %}
             {{ teaser | markdownify }}
+
+            <div class="skills__extended">
+                {% capture content %}{% include_relative content/high-angle-rescue.markdown %}{% endcapture %}
+                {{ content | markdownify }}
+            </div>
+
+        </div><!--
+
+     --><div class="skills__item  skills__item--sarm">
+
+            {% capture teaser %}{% include_relative teasers/sarm.markdown %}{% endcapture %}
+            {{ teaser | markdownify }}
+
+            <div class="skills__extended">
+                {% capture content %}{% include_relative content/sarm.markdown %}{% endcapture %}
+                {{ content | markdownify }}
+            </div>
 
         </div>
 

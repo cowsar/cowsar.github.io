@@ -1,0 +1,3 @@
+Rope rescue refers to any rescue where a rope is required to safely move the subject, the rescuer, or both. This may be on terrain where the slope is over a certain angle, on vertical terrain, or in areas where a slip or fall will have drastic consequences.
+
+Rope rescue courses in BC teach a top-down, dual rope “static” system that is similar to many other regions in the world. Training standards are high, with certifications for team member, team leader and instructor.
