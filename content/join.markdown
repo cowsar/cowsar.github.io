@@ -1,6 +1,6 @@
 # “Community Above Self”
 
-The process for joining our group is different depending on whether you have previous SAR training/certification. If you are already GSAR-trained (Justice Institute certification program), we still need you to fill out some basic forms (CowSAR application, current driver's abstract and criminal record check) initially, and then meet with myself and/or other board representatives.
+The process for joining our group is different depending on whether you have previous SAR training/certification. If you are already GSAR-trained (Justice Institute certification program), we still need you to fill out some basic forms (CowSAR application, current driver's abstract and criminal record check) initially, and meet with the vice-president and/or other board members.
 
 We encourage people who are considering applying for membership to take this free, [online introductory SAR course](http://www.jibc.ca/course/sar103) developed in cooperation with the [BC Search and Rescue Association](http://bcsara.com), the Justice Institute of BC and the RCMP. While this is not a requirement for membership on the team, it will give you some idea about how SAR works in BC.
 
